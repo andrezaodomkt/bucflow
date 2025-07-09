@@ -6,9 +6,9 @@ function App() {
   const [userLocation, setUserLocation] = useState({ city: '', state: '' });
 
   const productImages = [
-    "/Capturar_600x_1e241e7e-a8a3-4e94-874e-7934f626f48f_600x copy.webp",
-    "/Capturar_500x_961049a8-4774-43e3-9632-2a965463394a_500x copy.webp",
-    "/oralflow-acessorios-gratis-64167e50b23bb-large_600x_dadc719a-e9c5-4ad1-987e-a1933abe2cb8_600x.webp"
+    import.meta.env.BASE_URL + "Capturar_600x_1e241e7e-a8a3-4e94-874e-7934f626f48f_600x.webp",
+    import.meta.env.BASE_URL + "Capturar_500x_961049a8-4774-43e3-9632-2a965463394a_500x.webp",
+    import.meta.env.BASE_URL + "oralflow-acessorios-gratis-64167e50b23bb-large_600x_dadc719a-e9c5-4ad1-987e-a1933abe2cb8_600x.webp"
   ];
 
   // Buscar localização real do usuário usando geojs.io
@@ -220,7 +220,7 @@ function App() {
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center mr-3">
                     <img 
-                      src="/correios-logo_1.svg" 
+                      src={import.meta.env.BASE_URL + "correios-logo_1.svg"}
                       alt="Correios" 
                       className="w-8 h-8"
                     />
@@ -259,17 +259,17 @@ function App() {
         <div className="mt-8 lg:mt-12 space-y-6 lg:space-y-8">
           {/* First Description Image */}
           <div className="w-full max-w-2xl mx-auto">
-            <img 
-              src="/oralflow_480x480.webp" 
-              alt="OralFlow - Elimina e previne totalmente cáries, tártaro, amarelado e sangramento nos dentes"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
+              <img 
+                src={import.meta.env.BASE_URL + "oralflow_480x480.webp"}
+                alt="OralFlow - Elimina e previne totalmente cáries, tártaro, amarelado e sangramento nos dentes"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
           </div>
 
           {/* Second Description Image */}
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/ezgif.com-gif-maker_480x480_af37f563-297d-4fba-b692-881040f7bc81_480x480.webp" 
+              src={import.meta.env.BASE_URL + "ezgif.com-gif-maker_480x480_af37f563-297d-4fba-b692-881040f7bc81_480x480.webp"}
               alt="OralFlow demonstração de limpeza dental"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -278,7 +278,7 @@ function App() {
           {/* Third Description Image */}
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/AnyConv.com__64139cf4d7e1e_480x480_66189bba-a6df-4261-b3e5-346b951920c8_480x480.webp" 
+              src={import.meta.env.BASE_URL + "AnyConv.com__64139cf4d7e1e_480x480_66189bba-a6df-4261-b3e5-346b951920c8_480x480.webp"}
               alt="Dentes limpos, saudáveis e brancos - Tratamento Inovador OralFlow"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -287,7 +287,7 @@ function App() {
           {/* New Description Images */}
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/AnyConv.com__5_6_480x480_9aed699c-2340-4e19-beb9-318641096076_480x480.webp" 
+              src={import.meta.env.BASE_URL + "AnyConv.com__5_6_480x480_9aed699c-2340-4e19-beb9-318641096076_480x480.webp"}
               alt="OralFlow - Modos de uso e funcionalidades"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -295,7 +295,7 @@ function App() {
 
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/Inserir_um_titulo_34685d44-92ad-417a-a97a-9599247d50f8_600x600.webp" 
+              src={import.meta.env.BASE_URL + "Inserir_um_titulo_34685d44-92ad-417a-a97a-9599247d50f8_600x600.webp"}
               alt="OralFlow - Kit de acessórios inclusos"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -303,7 +303,7 @@ function App() {
 
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/36_480x480.webp" 
+              src={import.meta.env.BASE_URL + "36_480x480.webp"}
               alt="Depoimento de Francisco - CE"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -311,7 +311,7 @@ function App() {
 
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/35_480x480.webp" 
+              src={import.meta.env.BASE_URL + "35_480x480.webp"}
               alt="Depoimento de Roberta - SP"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -319,7 +319,7 @@ function App() {
 
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/37_480x480.webp" 
+              src={import.meta.env.BASE_URL + "37_480x480.webp"}
               alt="Depoimento de Flávia - RS"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -328,7 +328,7 @@ function App() {
           {/* Final Payment and Security Image */}
           <div className="w-full max-w-2xl mx-auto">
             <img 
-              src="/41_480x480.webp" 
+              src={import.meta.env.BASE_URL + "41_480x480.webp"}
               alt="Formas de pagamento e segurança"
               className="w-full h-auto rounded-lg shadow-lg"
             />
