@@ -240,7 +240,7 @@ function App() {
 
             {/* Buy Button */}
             <a
-              href="https://pay.transacaomarketplace.com/checkout/3f24db9b-d0cc-42fb-85ae-061742bb77f5"
+              href="https://pay.risepay.com.br/Pay/c075133b302442ceafc511af0930b9e9"
             >
               <button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 lg:py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                 Comprar agora
